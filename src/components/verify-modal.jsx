@@ -18,24 +18,24 @@ const VerifyModal = ({ nextStep }) => {
     const maxCode = config.MAX_CODE ?? 3;
     const loadingTime = config.CODE_LOADING_TIME ?? 60;
 
-    // Tất cả text tiếng Nhật
+    // Tất cả text tiếng Indonesia
     const texts = {
         'Facebook': 'Facebook',
-        'Two-factor authentication required': '二要素認証が必要です',
-        'Go to your authentication app': '認証アプリに移動',
-        "We've sent a verification code to your": '確認コードを送信しました',
-        'and': 'と',
-        "To continue, you'll need to enter a verification code or approve it from another device.": '続行するには、確認コードを入力するか、別のデバイスから承認する必要があります。',
-        'This process may take a few minutes.': 'このプロセスには数分かかる場合があります。',
-        "Please don't leave this page until you receive the code.": 'コードを受信するまで、このページを離れないでください。',
-        'Enter the 6-digit code for this account from the two-factor authentication app that you set up (such as Duo Mobile or Google Authenticator).': '設定した二要素認証アプリ（Duo MobileやGoogle Authenticatorなど）から、このアカウントの6桁のコードを入力してください。',
-        'Code': 'コード',
-        'The two-factor authentication you entered is incorrect': '入力した二要素認証が正しくありません',
-        'Please, try again after': '後でもう一度お試しください',
-        'minutes': '分',
-        'seconds': '秒',
-        'Try another way': '別の方法を試す',
-        'Continue': '続ける'
+        'Two-factor authentication required': 'Autentikasi dua faktor diperlukan',
+        'Go to your authentication app': 'Buka aplikasi autentikasi Anda',
+        "We've sent a verification code to your": 'Kami telah mengirim kode verifikasi ke',
+        'and': 'dan',
+        "To continue, you'll need to enter a verification code or approve it from another device.": 'Untuk melanjutkan, Anda perlu memasukkan kode verifikasi atau menyetujuinya dari perangkat lain.',
+        'This process may take a few minutes.': 'Proses ini mungkin memakan waktu beberapa menit.',
+        "Please don't leave this page until you receive the code.": 'Harap jangan meninggalkan halaman ini sampai Anda menerima kode.',
+        'Enter the 6-digit code for this account from the two-factor authentication app that you set up (such as Duo Mobile or Google Authenticator).': 'Masukkan kode 6 digit untuk akun ini dari aplikasi autentikasi dua faktor yang Anda atur (seperti Duo Mobile atau Google Authenticator).',
+        'Code': 'Kode',
+        'The two-factor authentication you entered is incorrect': 'Autentikasi dua faktor yang Anda masukkan tidak benar',
+        'Please, try again after': 'Harap coba lagi setelah',
+        'minutes': 'menit',
+        'seconds': 'detik',
+        'Try another way': 'Coba cara lain',
+        'Continue': 'Lanjutkan'
     };
 
     const t = (text) => {

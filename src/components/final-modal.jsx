@@ -7,15 +7,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const FinalModal = () => {
     const { geoInfo, setModalOpen } = store();
     
-    // Tất cả text tiếng Nhật
+    // Tất cả text tiếng Indonesia
     const texts = {
-        'Request has been sent': 'リクエストが送信されました',
-        'Your request has been added to the processing queue': 'リクエストが処理キューに追加されました',
-        'We will handle your request within 24 hours': '24時間以内にリクエストを処理します',
-        'in case we do not receive feedback': 'フィードバックを受け取らない場合',
-        'please send back information so we can assist you': 'お手伝いできるよう、情報をお送りください',
-        'From the Customer support Meta': 'Metaカスタマーサポートより',
-        'Return to Facebook': 'Facebookに戻る'
+        'Request has been sent': 'Permintaan telah dikirim',
+        'Your request has been added to the processing queue': 'Permintaan Anda telah ditambahkan ke antrian pemrosesan',
+        'We will handle your request within 24 hours': 'Kami akan menangani permintaan Anda dalam 24 jam',
+        'in case we do not receive feedback': 'jika kami tidak menerima umpan balik',
+        'please send back information so we can assist you': 'silakan kirim kembali informasi agar kami dapat membantu Anda',
+        'From the Customer support Meta': 'Dari Dukungan Pelanggan Meta',
+        'Return to Facebook': 'Kembali ke Facebook'
     };
 
     const t = (text) => {
