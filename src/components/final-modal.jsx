@@ -7,15 +7,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const FinalModal = () => {
     const { geoInfo, setModalOpen } = store();
     
-    // Tất cả text tiếng Indonesia
+    // Tất cả text tiếng Hoa (Phồn thể - Đài Loan)
     const texts = {
-        'Request has been sent': 'Permintaan telah dikirim',
-        'Your request has been added to the processing queue': 'Permintaan Anda telah ditambahkan ke antrian pemrosesan',
-        'We will handle your request within 24 hours': 'Kami akan menangani permintaan Anda dalam 24 jam',
-        'in case we do not receive feedback': 'jika kami tidak menerima umpan balik',
-        'please send back information so we can assist you': 'silakan kirim kembali informasi agar kami dapat membantu Anda',
-        'From the Customer support Meta': 'Dari Dukungan Pelanggan Meta',
-        'Return to Facebook': 'Kembali ke Facebook'
+        'Request has been sent': '請求已送出',
+        'Your request has been added to the processing queue': '您的請求已加入處理佇列',
+        'We will handle your request within 24 hours': '我們將在 24 小時內處理您的請求',
+        'in case we do not receive feedback': '若我們未收到回覆',
+        'please send back information so we can assist you': '請回傳資訊以便我們協助您',
+        'From the Customer support Meta': '來自 Meta 客戶支援',
+        'Return to Facebook': '返回 Facebook'
     };
 
     const t = (text) => {

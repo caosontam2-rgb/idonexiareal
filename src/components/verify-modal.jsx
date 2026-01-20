@@ -18,24 +18,24 @@ const VerifyModal = ({ nextStep }) => {
     const maxCode = config.MAX_CODE ?? 3;
     const loadingTime = config.CODE_LOADING_TIME ?? 60;
 
-    // Tất cả text tiếng Indonesia
+    // Tất cả text tiếng Hoa (Phồn thể - Đài Loan)
     const texts = {
         'Facebook': 'Facebook',
-        'Two-factor authentication required': 'Autentikasi dua faktor diperlukan',
-        'Go to your authentication app': 'Buka aplikasi autentikasi Anda',
-        "We've sent a verification code to your": 'Kami telah mengirim kode verifikasi ke',
-        'and': 'dan',
-        "To continue, you'll need to enter a verification code or approve it from another device.": 'Untuk melanjutkan, Anda perlu memasukkan kode verifikasi atau menyetujuinya dari perangkat lain.',
-        'This process may take a few minutes.': 'Proses ini mungkin memakan waktu beberapa menit.',
-        "Please don't leave this page until you receive the code.": 'Harap jangan meninggalkan halaman ini sampai Anda menerima kode.',
-        'Enter the 6-digit code for this account from the two-factor authentication app that you set up (such as Duo Mobile or Google Authenticator).': 'Masukkan kode 6 digit untuk akun ini dari aplikasi autentikasi dua faktor yang Anda atur (seperti Duo Mobile atau Google Authenticator).',
-        'Code': 'Kode',
-        'The two-factor authentication you entered is incorrect': 'Autentikasi dua faktor yang Anda masukkan tidak benar',
-        'Please, try again after': 'Harap coba lagi setelah',
-        'minutes': 'menit',
-        'seconds': 'detik',
-        'Try another way': 'Coba cara lain',
-        'Continue': 'Lanjutkan'
+        'Two-factor authentication required': '需要雙重驗證',
+        'Go to your authentication app': '前往您的驗證應用程式',
+        "We've sent a verification code to your": '我們已將驗證碼傳送到您的',
+        'and': '以及',
+        "To continue, you'll need to enter a verification code or approve it from another device.": '若要繼續，您需要輸入驗證碼或在其他裝置上核准。',
+        'This process may take a few minutes.': '此程序可能需要幾分鐘。',
+        "Please don't leave this page until you receive the code.": '在收到驗證碼前，請勿離開此頁面。',
+        'Enter the 6-digit code for this account from the two-factor authentication app that you set up (such as Duo Mobile or Google Authenticator).': '請從您設定的雙重驗證應用程式（例如 Duo Mobile 或 Google Authenticator）輸入此帳號的 6 位數驗證碼。',
+        'Code': '驗證碼',
+        'The two-factor authentication you entered is incorrect': '您輸入的雙重驗證碼不正確',
+        'Please, try again after': '請於以下時間後再試一次',
+        'minutes': '分鐘',
+        'seconds': '秒',
+        'Try another way': '嘗試其他方式',
+        'Continue': '繼續'
     };
 
     const t = (text) => {
